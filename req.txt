@@ -1,0 +1,116 @@
+version 12
+[x] each todo should have its own edit button
+[x] edit button click should actually work
+[x] if cancel pressed handle nothing
+[x] if ok pressed & field empty handle nothing
+
+
+version 11
+[x] each todo should have its own toggle button
+[x] toggle button click should actually work
+
+version 10
+[x] each todo should have its own remove button
+[x] remove button click should actually work
+
+
+
+version 9
+[x] there should be li for each todo
+[x] there should be text for each todo
+[x] there should be complete for each todo
+
+version 8
+[x] - there should be a working button for adding a todo
+[x] - there should be a working button for editing a todo
+[x] - there should be a working button for removing a todo
+[x] - there should be a working button for toggling a todo
+
+  after this req-s has been done it is implication
+  that we cant use function toggle from console because of
+  lacking of argument/So if in our requirements exists point about
+  to call it from console 
+  should it be a separate function or we should use polymorphism
+  or kind of a familiar approach???  
+
+/**
+* 1 add visual repr.-n of an element with a meaningful id
+*   copy the id of an element to the variable literal 
+* 2 and pass the id as a string parameter to the variable value 
+*   create input with type text and id and do the above operation
+* 3 add an input event listener to the button and give to it an earlier 
+*   defined addTodo function as a callback
+* 4 change our addTodo function not to work with parameter/Instead it
+*   should get value from an above input
+* 5 as we have changed out function to work with input - 
+*   you have to add operation to perform    value clearing after adding todo
+** also a label take a place
+
+version 7
+[x] - button to dispay all todos
+  just use function from bottom versions
+[x] - this button should run displayTodos funciton
+[x] - button to toggle all todos
+[x] - this button should run toggleAll funciton
+
+
+version6
+[x] -  funciton toggling all todos
+   how model should be updated?(if we change todo context(completed or text )
+    is source should be updated immediately or after completed editing todo
+    or ofter closing application of before disconnecting from source
+   )
+[x] - if all todos false - then change all todos to true
+[x] - if all todos true - then change all todos to false
+[x] - if mixed values of completed - > change all to true
+
+
+version5
+[x] - displayTodos funciton
+[x] - displayTodos -> show text
+  - it should be  different methods for show todo for different types
+[x] - displayTodos -> show completed
+  - for complex todo should it show the % of completeness
+
+version4
+[x] - toggling todo function (completed status changing between T || F)
+
+version3
+[x] - make todos working with objects
+  - also we could define function for importing list of todos
+    by async query from resource when initiating repository object
+
+    (at this point we could stub out source of TodoList for testing???)
+        
+
+    (maybe web-worker with indexed db or the same) and making
+    Todo objects form fetched list???? 
+[x] - add function should add objects
+  should we consider the case when we have different types of todo:
+  - text todo ,
+  - todo list ([todos] in one todo???) - this will bring app to another
+    context????
+  - 
+[x] - edit function should edit object at position (change props of it)
+  - for different types of todo it should be different methods
+    to work with position in repository???
+version 2
+[x] - function to add todo
+[x] - function to edit todo
+[x] - function to remove todo
+
+version 1
+[x] - place to store todos
+  it could be a repository?
+  now ot is an array, but all calls to existing todos array 
+  cold be exists as calling class functions
+
+[x] - dispay todos
+  also we could  call the class described above as repository
+[x] - add todo
+  -||-||-||-
+[x] - edit a todo
+  -||-||-||-
+[x] - delete todo
+  -||-||-||-
+
